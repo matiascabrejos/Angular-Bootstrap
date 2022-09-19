@@ -1,0 +1,20 @@
+<div class="container table-responsive py-5">
+  <table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Second Name</th>
+        <th scope="col">Twitter Account</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of tableItems">
+      <tr>
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.secondName }}</td>
+        <td>{{ item.twitterAcc }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
